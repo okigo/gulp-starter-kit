@@ -1,0 +1,49 @@
+/**
+ * --Global settings--
+ * "window.restoreWindows": "all"
+ *
+ * --Extensions--
+ * Auto Close Tag                    (https://github.com/formulahendry/vscode-auto-close-tag)
+ * Auto Complete Tag                 (https://github.com/formulahendry/vscode-auto-complete-tag.git)
+ * Auto Rename Tag                   (https://github.com/formulahendry/vscode-auto-rename-tag.git)
+ * Code Runner                       (https://github.com/formulahendry/vscode-code-runner.git)
+ * HTML Snippets                     (https://github.com/abusaidm/html-snippets)
+ * ESLint extension                  (https://github.com/Microsoft/vscode-eslint)
+ * Material Icon Theme               (https://github.com/PKief/vscode-material-icon-theme.git)
+ * Node npm                          (https://github.com/Microsoft/vscode-npm-scripts)
+ * Npm Intellisense                  (https://github.com/ChristianKohler/NpmIntellisense.git)
+ * Path Autocomplete                 (https://github.com/ionutvmi/path-autocomplete)
+ * Sass                              (https://github.com/TheRealSyler/vscode-sass-indented)
+ * Oceanic Next color theme          (https://github.com/voronianski/oceanic-next-color-scheme)
+ */
+{
+    // Editor
+    "editor.tabSize": 2,
+    "editor.cursorStyle": "line-thin",
+    "editor.wordWrap": "on",
+    "editor.dragAndDrop": false,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    "editor.renameOnType": true,
+    "editor.formatOnSave": true,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "workbench.colorTheme": "Oceanic Next",
+    "workbench.iconTheme": "material-icon-theme",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.trimTrailingWhitespace": true,
+    "javascript.validate.enable": false,
+    "javascript.format.enable": false,
+    "typescript.validate.enable": false,
+    "typescript.format.enable": false,
+
+    // Emmet
+    "emmet.triggerExpansionOnTab": true,
+    // ESLint
+    "eslint.format.enable": true,
+    "git.ignoreLimitWarning": true,
+
+}

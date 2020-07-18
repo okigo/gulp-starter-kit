@@ -1,0 +1,34 @@
+{
+  "name": "gulp-starter-kit",
+  "version": "1.0.0",
+  "description": "Allows begin front-end development with using Gulp task manager.",
+  "main": "main.js",
+  "private": true,
+  "scripts": {},
+  "browserslist": [
+    "> 1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not ie < 9"
+  ],
+  "keywords": [
+    "gulp-starter-kit"
+  ],
+  "author": {
+    "name": "Aleksey Filatov"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "browser-sync": "^2.26.7",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,13 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jquery": true
+  },
+  "extends": ["airbnb-base"],
+  "rules": {
+    "max-len": ["error", 120],
+    "linebreak-style": 0
+  }
+}

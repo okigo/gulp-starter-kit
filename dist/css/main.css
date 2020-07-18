@@ -1,0 +1,8 @@
+h1 {
+  color: white;
+  background-color: black; }
+
+.autoplacement-example {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
