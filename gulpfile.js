@@ -5,6 +5,7 @@ const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const babel = require('gulp-babel');
+const pug = require('gulp-pug');
 
 function runSync(cb) {
   browserSync.init({
@@ -35,9 +36,19 @@ function compileJS(cb) {
     });
 }
 
+function compileHTML(cb) {
+  return src('src/pug/pages/*.pug')
+    .pipe(pug({ pretty: true }))
+    .pipe(dest('dist/'))
+    .on('end', () => {
+      cb();
+    });
+}
+
 function runWatch(cb) {
   watch('src/js/*.js', series(compileJS));
   watch('src/scss/*.scss', series(compileCSS));
+  watch('src/pug/**/*.pug', series(compileHTML));
   watch('dist/*.html').on('change', browserSync.reload);
   cb();
 }
@@ -45,6 +56,7 @@ function runWatch(cb) {
 exports.sync = runSync;
 exports.css = compileCSS;
 exports.js = compileJS;
+exports.html = compileHTML;
 exports.watch = runWatch;
 
-exports.default = series(runSync, parallel(compileCSS, compileJS), runWatch);
+exports.default = series(runSync, parallel(compileCSS, compileJS), compileHTML, runWatch);
